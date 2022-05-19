@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
+
+    <!-- AOS css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Raja Farhan Linktree</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row text-center pt-5">
+          <div class="col">
+            <img src="img/profileaan.jpg" alt="Raja Muhammad Farhan Zahputra" width="200" class="rounded-circle img-thumbnail profile" />
+          </div>
+        </div>
+        <div class="row text-center text-light fw-semibold pt-3 fs-2">
+          <div class="col">
+            <p class="name"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center pt-5 instagram">
+            <a href="https://www.instagram.com/raja.farhan/ " target="_blank">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-secondary" type="button">INSTAGRAM</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center pt-5 tiktok">
+            <a href="https://www.instagram.com/raja.farhan/ " target="_blank">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-secondary" type="button">TIKTOK</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center pt-5 facebook">
+            <a href="https://www.instagram.com/raja.farhan/ " target="_blank">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-secondary" type="button">FACEBOOK</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center pt-5 twitter">
+            <a href="https://www.instagram.com/raja.farhan/ " target="_blank">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-secondary" type="button">TWITTER</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- GSAP script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".name", { duration: 2, text: "Raja Muhammad Farhan Zahputra" });
+      gsap.from(".profile", { duration: 1.5, rotateY: 720, opacity: 0 });
+      gsap.from(".instagram", { duration: 1, x: -100, opacity: 0, delay: 2 });
+      gsap.from(".tiktok", { duration: 1, x: 100, opacity: 0, delay: 2.5 });
+      gsap.from(".facebook", { duration: 1, x: -100, opacity: 0, delay: 3 });
+      gsap.from(".twitter", { duration: 1, x: 100, opacity: 0, delay: 3.5 });
+    </script>
+  </body>
+</html>

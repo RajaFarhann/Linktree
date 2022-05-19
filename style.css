@@ -1,0 +1,8 @@
+body {
+  background-image: url(img/background.png);
+  height: 750px;
+}
+
+a {
+  text-decoration: none;
+}
