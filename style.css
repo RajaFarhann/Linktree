@@ -1,7 +1,18 @@
 body {
   background-image: url(img/background.png);
+  background-size: 150% auto;
 }
 
 a {
   text-decoration: none;
+}
+.text-stroke {
+  -webkit-text-stroke-width: 0.5px; /* Lebar stroke */
+  -webkit-text-stroke-color: black; /* Warna stroke */
+  color: white; /* Warna teks */
+}
+.text-stroke1 {
+  -webkit-text-stroke-width: 0.3px; /* Lebar stroke */
+  -webkit-text-stroke-color: black; /* Warna stroke */
+  color: white; /* Warna teks */
 }
